@@ -45,7 +45,7 @@ const extraStyle = () => {
     <li class="flex items-start justify-start pb-4 cursor-pointer" @mouseenter="isHover()" @mouseleave="isHover()">
         <img v-if="iconString !== ''" :width="iconSize" :src="`/images/icons/${icon}.png`"
             class="transition duration-500 ease-in-out">
-        <div :class="extraStyle()" class="font-semibold text-[14px] mt-0.5 transition duration-300 ease-in-out hover:text-white">
+        <div :class="extraStyle()" class="font-semibold text-[14px] mt-0.5 transition duration-500 ease-in-out hover:text-white">
             <span :class="route.path === pageUrl ? 'text-white' : ''">{{ name }}</span>
         </div>
     </li>

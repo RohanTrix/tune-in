@@ -2,12 +2,14 @@
 import { ref, onMounted } from 'vue'
 import { RouterLink, RouterView } from 'vue-router';
 import MenuItem from "@/components/MenuItem.vue"
+import PlayCircle from "vue-material-design-icons/PlayCircle.vue"
 </script>
 
 <template>
-    <div id="SideNav" class="fixed p-6 h-[100%] w-[270px] z-50 bg-black">
+    <div id="SideNav" class="fixed p-6 h-[100%] w-[270px] z-40 bg-black">
         <RouterLink to="/" class="flex items-center">
-            <img class="w-10 h-10 mr-2" src="/images/logo.png" alt="">
+            <PlayCircle class="mr-2" fillColor="#FFF" :size="50" />
+            <!-- <img  src="/images/logo.png" alt=""> -->
             <h1 class="text-white text-xl font-medium">Tune In!	</h1>
             <!-- <img class="mb-[18px]" width="125" src="/images/icons/spotify-logo.png" alt=""> -->
         </RouterLink>

@@ -8,22 +8,22 @@ const props = defineProps({
 })
 
 const { imgURL, title, playlistId } = toRefs(props)
-const playButtonVisible = ref(true)
+const playButtonVisible = ref(false)
 const togglePlayButtonVisibility = () => { playButtonVisible.value = !playButtonVisible.value }
 
 </script>
 <template>
-    <button id="RecentCard" class="min-w-[500px] grow mr-5 flex justify-between rounded-md items-center glass"
+    <button class="md:min-w-[500px] lg:min-w-[350px] mb-2 grow mr-5 flex justify-between rounded-md items-center glass"
         @mouseenter="togglePlayButtonVisibility" @mouseleave="togglePlayButtonVisibility">
         <div class="flex justify-center items-center">
             <img class="rounded-sm mr-3" :width="80" :src="imgURL" alt="">
             <h3 class="text-white text-lg  font-semibold">{{ title }}</h3>
 
         </div>
-        <button :class="playButtonVisible ? 'invisible' : ''"
+        <button :class="playButtonVisible ? '' : 'invisible'"
             class="rounded-full bg-green-500 flex items-center justify-center w-12 h-12 m-4 shadow-lg">
             <Play :size="30" />
-    </button>
+        </button>
     </button>
 </template>
 
