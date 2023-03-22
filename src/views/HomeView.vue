@@ -14,22 +14,18 @@ const greet = () => {
         <div class="px-8 py-4">
             <h1 class="text-white text-3xl font-medium">Good {{ greet() }}</h1>
         </div>
-        <div class="flex flex-wrap content-between min-h-[180px] items-center justify-start px-8">
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+        <div class="flex flex-wrap content-evenly min-h-[180px] items-center justify-start pl-8">
+            <RecentCard imgURL="https://picsum.photos/id/60/300/300" title="Coding Mode"
                 playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+            <RecentCard imgURL="https://picsum.photos/id/61/300/300" title="Sleeping"
                 playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+            <RecentCard imgURL="https://picsum.photos/id/62/300/300" title="Work"
                 playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+            <RecentCard imgURL="https://picsum.photos/id/63/300/300" title="Grind Time"
                 playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+            <RecentCard imgURL="https://picsum.photos/id/64/300/300" title="Coding Mode"
                 playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
-                playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
-                playlistId="12345" />
-            <RecentCard imgURL="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" title="Coding Mode"
+            <RecentCard imgURL="https://picsum.photos/id/65/300/300" title="Coding Mode"
                 playlistId="12345" />
         </div>
         <div class="px-8 py-4">
