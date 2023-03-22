@@ -1,10 +1,15 @@
 <script setup>
 import { ref } from 'vue'
+import { useRoute } from "vue-router"
 import ChevronLeft from "vue-material-design-icons/ChevronLeft.vue"
 import ChevronRight from "vue-material-design-icons/ChevronRight.vue"
 import MenuDown from "vue-material-design-icons/MenuDown.vue"
 import MenuUp from "vue-material-design-icons/MenuUp.vue"
+import SearchBar from '@/components/SearchBar.vue'
+
 const openMenu = ref(false)
+
+const route = useRoute()
 </script>
 
 <template>
@@ -17,13 +22,12 @@ const openMenu = ref(false)
             <button type="button" class="rounded-full bg-black p-[1px] cursor-pointer ml-4">
                 <ChevronRight fillColor="#FFF" :size="30" />
             </button>
+            <SearchBar v-if="route.path === '/search'" class="ml-4" />
         </div>
         <button @click="openMenu = !openMenu" :class="openMenu ? 'bg-[#282828]' : 'bg-black'"
             class="rounded-full bg-black hover:bg-[#282828] p-1 mr-8 mt-0.5 cursor-pointer">
             <div class="flex justify-start items-center">
-                <img class="rounded-full" width="30"
-                    src="https://media.licdn.com/dms/image/D4D03AQFKLXch3zKJCA/profile-displayphoto-shrink_800_800/0/1678628334067?e=1684972800&v=beta&t=MO83vkeW0lCLY9Slm718yA7tUwTRwOyapWxO2Qnm3IM"
-                    alt="">
+                <img class="rounded-full" width="30" src="/images/user-img.jpg">
                 <div class="text-white text-[14px] font-semibold px-3">Rohan Sirohia</div>
                 <MenuDown v-if="!openMenu" @click="openMenu = true" fillColor="#FFFFFF" :size="25" />
                 <MenuUp v-else @click="openMenu = false" fillColor="#FFFFFF" :size="25" />
