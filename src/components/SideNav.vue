@@ -17,10 +17,10 @@ import PlayCircle from "vue-material-design-icons/PlayCircle.vue"
             <RouterLink to="/">
                 <MenuItem class="ml-[1px]" :iconSize="23" name="Home" iconString="home" pageUrl="/" />
             </RouterLink>
-            <RouterLink to="/search">
+            <RouterLink to="search">
                 <MenuItem class="ml-[1px]" :iconSize="23" name="Search" iconString="search" pageUrl="/search" />
             </RouterLink>
-            <RouterLink to="/library">
+            <RouterLink to="library">
                 <MenuItem class="ml-[1px]" :iconSize="23" name="Library" iconString="library" pageUrl="/library" />
             </RouterLink>
             <div class="pt-3.5">
