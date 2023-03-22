@@ -13,7 +13,7 @@ const togglePlayButtonVisibility = () => { playButtonVisible.value = !playButton
 
 </script>
 <template>
-    <button class="md:min-w-[500px] lg:min-w-[350px] xl:w-40 mb-2 mr-5 flex justify-between rounded-md items-start glass grow"
+    <button class="md:w-[500px] lg:w-[350px] xl:w-[450px] mb-2 mr-5 flex justify-between rounded-md items-start glass grow"
         @mouseenter="togglePlayButtonVisibility" @mouseleave="togglePlayButtonVisibility">
         <div class="flex justify-center items-center">
             <img class="rounded-sm mr-3" :width="80" :src="imgURL" alt="">

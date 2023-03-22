@@ -2,7 +2,8 @@
 import RecentCard from "@/components/cards/RecentCard.vue"
 import MusicItemCard from "@/components/cards/MusicItemCard.vue"
 const greet = () => {
-    const hrs = new Date().getHours;
+    const hrs = new Date().getHours();
+    console.log(hrs)
     if (hrs < 12) return 'morning'
     else if (hrs < 17) return 'afternoon'
     else return 'evening'

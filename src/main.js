@@ -4,7 +4,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import { router } from "./router";
 import "./assets/main.css";
-import "primevue/resources/themes/lara-light-indigo/theme.css";     
+import "primevue/resources/themes/vela-green/theme.css";     
     
 //core
 import "primevue/resources/primevue.min.css";
