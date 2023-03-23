@@ -1,7 +1,11 @@
 <script setup>
 import CategoryCard from "@/components/cards/CategoryCard.vue"
+import { onMounted } from "vue";
 import { getRandImgUrl } from "../stores/useImgUrlGen";
 
+onMounted(() =>{
+    console.log('mai mount hogaya')
+})
 
 </script>
 <template>

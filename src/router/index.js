@@ -1,8 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-// import MainContentView from "@/views/MainContentView.vue";
-import AboutView from "../views/AboutView.vue";
 import HomeView from "../views/HomeView.vue";
 import SearchView from "../views/SearchView.vue";
+import NotFoundView from "../views/NotFoundView.vue";
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -21,5 +20,6 @@ export const router = createRouter({
       name: "library",
       component: SearchView,
     },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFoundView },
   ],
 });
