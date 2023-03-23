@@ -22,10 +22,10 @@ const toggleVolumeBarHover = () => isVolumeBarHover.value = !isVolumeBarHover.va
             <div class="leftSection flex items-center">
                 <CurrentSongView imgURL="https://picsum.photos/id/100/300/300" title="Hello" subtitle="Jonas Dude" />
                 <button class="text-gray-400 hover:text-white transition mr-3">
-                    <HeartOutline size="22" />
+                    <HeartOutline :size="22" />
                 </button>
                 <button class="text-gray-400 hover:text-white transition">
-                    <PictureInPictureBottomRight size="22" />
+                    <PictureInPictureBottomRight :size="22" />
                 </button>
             </div>
             <div class="centerSection mb-2">
@@ -33,15 +33,15 @@ const toggleVolumeBarHover = () => isVolumeBarHover.value = !isVolumeBarHover.va
             </div>
             <div class="rightSection flex">
                 <button class="text-gray-400 hover:text-white transition mr-3">
-                    <TrayFull size="22" />
+                    <TrayFull :size="22" />
                 </button>
                 <button class="text-gray-400 hover:text-white transition mr-3">
-                    <SpeakerBluetooth size="22" />
+                    <SpeakerBluetooth :size="22" />
                 </button>
                 <div class="flex items-center">
 
                     <button class="text-gray-400 hover:text-white transition mr-3 flex">
-                        <VolumeHigh size="22" />
+                        <VolumeHigh :size="22" />
                     </button>
                     <div @mouseenter="toggleVolumeBarHover" @mouseleave="toggleVolumeBarHover">
                         <ProgressBar v-if="!isVolumeBarHover" :showValue="false" :value="volumeVal"

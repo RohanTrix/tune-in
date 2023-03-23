@@ -18,33 +18,32 @@ const toggleProgressBarHover = () => isProgressBarHover.value = !isProgressBarHo
 
 
 const isPlaying = ref(false)
-const isPlayButtonHover = ref(false)
 </script>
 
 <template>
   <div class="text-green-700 flex flex-col items-center">
     <section class="flex justify-around w-[50%] text-white">
       <button class="text-gray-400 hover:text-white transition mr-3">
-        <ShuffleVariant size="28" />
+        <ShuffleVariant :size="28" />
       </button>
       <button class="text-gray-400 hover:text-white transition mr-3">
-        <Rewind size="30" />
+        <Rewind :size="30" />
       </button>
       <div class="playpause relative">
 
         <button v-if="!isPlaying" class="text-white transition mt-2 mr-3" @click="isPlaying = !isPlaying">
-          <PlayCircle size="34" />
+          <PlayCircle :size="34" />
         </button>
         <button v-else class="text-white transition mt-2 mr-3" @click="isPlaying = !isPlaying">
-          <PauseCircle size="34" />
+          <PauseCircle :size="34" />
         </button>
 
       </div>
       <button class="text-gray-400 hover:text-white transition mr-3">
-        <FastForward size="30" />
+        <FastForward :size="30" />
       </button>
       <button class="text-gray-400 hover:text-white transition mr-3">
-        <Repeat size="28" />
+        <Repeat :size="28" />
       </button>
     </section>
     <div @mouseenter="toggleProgressBarHover" @mouseleave="toggleProgressBarHover" class="pt-1 pb-3">

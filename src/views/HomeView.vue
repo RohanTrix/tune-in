@@ -1,9 +1,7 @@
 <script setup>
 import RecentCard from "@/components/cards/RecentCard.vue"
 import MusicItemCard from "@/components/cards/MusicItemCard.vue"
-import useImgUrlGen from '@/stores/useImgUrlGen.js';
-
-
+import { getRandImgUrl } from "../stores/useImgUrlGen";
 const greet = () => {
     const hrs = new Date().getHours();
     if (hrs < 12) return 'morning'
@@ -12,7 +10,6 @@ const greet = () => {
 }
 
 //Img gen
-const { getRandImgUrl } = useImgUrlGen();
 
 </script>
 

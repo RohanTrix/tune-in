@@ -15,7 +15,9 @@ const icon = ref(null)
 const textIsHover = ref(false)
 
 watchEffect(() => {
-    if (route.path == pageUrl.value) {
+    if (route.path === pageUrl.value) {
+        console.log(route.path);
+        console.log(pageUrl.value);
         icon.value = iconString.value + '-active'
         textIsHover.value = true;
     }

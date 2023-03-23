@@ -1,9 +1,6 @@
 <script setup>
 import CategoryCard from "@/components/cards/CategoryCard.vue"
-
-import { ref, onBeforeMount } from 'vue'
-import useRandImgUrl from '@/stores/useImgUrlGen'
-const { getRandImgUrl } = useRandImgUrl();
+import { getRandImgUrl } from "../stores/useImgUrlGen";
 
 
 </script>
