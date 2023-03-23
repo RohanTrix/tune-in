@@ -18,7 +18,7 @@ const props = defineProps({
         <div v-if="randColor" :style="`background-color: ${randColor}`"
             class="relative contrast-[2] brightness-[0.87] rounded-xl aspect-square  overflow-hidden">
             <div class="text-white pt-4 pl-4 text-2xl font-medium">{{ category }}</div>
-            <img :src="imgURL" class="absolute contrast-[0.55] -right-3.5 bottom-0 aspect-square max-w-[100px] rotate-[20deg]">
+            <img onerror="" :src="imgURL" class="absolute contrast-[0.55] -right-3.5 bottom-0 aspect-square max-w-[100px] rotate-[20deg]">
         </div>
     </RouterLink>
 </template>
