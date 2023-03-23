@@ -5,7 +5,6 @@ let randUrl;
 const getRandImgUrl = () => {
   randUrl = `https://picsum.photos/id/${getRandInt()}/300/300`;
   return randUrl
-  // await 
   
 };
 export { getRandImgUrl };
