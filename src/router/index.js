@@ -18,7 +18,7 @@ export const router = createRouter({
     {
       path: "/library",
       name: "library",
-      component: SearchView,
+      component: NotFoundView,
     },
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFoundView },
   ],
