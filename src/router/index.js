@@ -18,7 +18,7 @@ export const router = createRouter({
     {
       path: "/library",
       name: "library",
-      component: () => import("../views/NotFoundView.vue"),
+      component: () => import("../views/LibraryView.vue"),
     },
     {
       path: "/:pathMatch(.*)*",

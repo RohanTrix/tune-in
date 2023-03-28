@@ -28,3 +28,12 @@ coverage
 
 # Local Netlify folder
 .netlify
+
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+*.mp3

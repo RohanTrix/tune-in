@@ -1,5 +1,5 @@
 # ▶ Tune In!
-### [ ⚙ Work in progress]
+### [ ⚙ Work in progress ]
 Listen to you favourite music with Tune In!
 
 ## ✨ Features:

@@ -22,7 +22,7 @@ const togglePlayButtonVisibility = () => { playButtonVisible.value = !playButton
         </div>
         <button :class="playButtonVisible ? '' : 'invisible'"
             class="rounded-full bg-green-500 flex items-center justify-center w-12 h-12 m-4 shadow-lg">
-            <Play :size="30" />
+            <Play fillColor="#000" :size="30" />
         </button>
     </button>
 </template>
