@@ -1,6 +1,6 @@
 # ▶ Tune In!
-### [ ⚙ Work in progress ]
 Listen to you favourite music with Tune In!
+> A Spotify UI clone built with Vue.Js and Tailwind
 
 ## ✨ Features:
 * Play, Pause and control the music you play ⏯

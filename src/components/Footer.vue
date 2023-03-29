@@ -17,8 +17,8 @@ const toggleVolumeBarHover = () => isVolumeBarHover.value = !isVolumeBarHover.va
 
 </script>
 <template>
-    <footer class="fixed flex items-baseline bottom-0 h-[9%] z-50 w-full bg-[#181818] ">
-        <div class="flex items-center w-full justify-between mx-5 my-3">
+    <footer class="fixed flex items-baseline bottom-0 z-50 w-full bg-[#181818] ">
+        <div class="flex items-center w-full justify-between mx-5 mt-3">
             <div class="leftSection flex items-center">
                 <CurrentSongView imgURL="https://picsum.photos/id/100/300/300" title="Hello" subtitle="Jonas Dude" />
                 <button class="text-gray-400 hover:text-white transition mr-3">
